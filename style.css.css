@@ -1,0 +1,173 @@
+
+        
+        body {
+             margin: 0;
+             font-family: Arial, sans-serif;
+
+            background-image: url("c:\Users\BRENDA\Desktop\website.html\bre.jpg.avif");
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+
+            color: hsl(244, 94%, 51%);
+            
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #0feb3f;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        nav h2 {
+            color: rgb(219, 61, 22);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4db8ff;
+        }
+
+        /* Home section */
+        .hero {
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0b1f3a, #1261a0);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            color: #d31a42;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #dceeff;
+        }
+
+        /* General sections */
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #0b3a22;
+            font-size: 32px;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Skills */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .skill h3 {
+            color: #1261a0;
+            margin-bottom: 10px;
+        }
+
+        /* Projects */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: rgb(221, 24, 145);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .project h3 {
+            color: hsl(118, 96%, 52%);
+            margin-bottom: 10px;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            background-color: #eaf3fb;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin: 12px;
+        }
+
+        .contact a {
+            color: #a0121e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #150b3a;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 10px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
